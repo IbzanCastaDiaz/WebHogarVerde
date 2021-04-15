@@ -1,0 +1,155 @@
+/* ---------------------variable */
+:root{
+    --base1-color:   #a0bd2c;
+    --base2-color: #5f701b;
+    --black-color: #313337;
+    /* Tipografia */
+    --normal: 12px;
+    /* Espaciado */
+    --space: 10px;
+    /* Box shadow */
+    --box: 0 0 20px #c1bcbc;
+    }
+    /* #a0bd2c */
+
+/* navbar */
+.navbar {
+    background:linear-gradient(165deg, black, black, 80%, var(--base1-color));
+}
+.navbar img{
+    width: 100px;
+}
+/* /navbar */
+
+/* Main */
+#main .carousel-inner img {
+    max-height: 70vH;
+    /* la imagen se encuentra desproporcionada, para cambiar esto aplicamos objet-fit: cover; */
+    object-fit: cover;
+    /* filtro */
+    /* filter: grayscale(70%); */
+}
+#carousel {
+    position:relative;
+}
+#carousel .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background-color: rgba(0,0,0,0.5); */
+    z-index: 1;
+}
+#carousel .overlay .container,
+#carousel .overlay .row {
+    height: 100%;
+}
+/* /Main */
+
+/* nosotros home */
+.nosotros-home {
+    background-image: url("images/PanelesInstalados.jpeg");
+    background-size: cover;
+    background-position: center center;
+}
+/* /nosotros home */
+
+/* footer */
+#footer {
+    background:linear-gradient(90deg, var(--base1-color), var(--base1-color), 90%, var(--base2-color));
+    /* background:linear-gradient(90deg, #1c3643, #273b47, 25%, #1e5372); */
+}
+
+#footer {
+    color:white;
+}
+#footer img {
+    padding: 10px;
+    width: 80px;
+  }
+/* /footer */
+
+/* blog */
+.blog-info {
+    align-items: center;
+}
+/* /blog */
+
+/* Generales */
+.title1 h1{
+    font-family: 'Pinyon Script', cursive;
+    font-size: 75px;
+    color: var(--black-color);
+    /*              x    y   radio */
+    text-shadow: 0.0em 0.0em 0.1em white;
+    font-weight: 600;
+}
+.title2 h2{
+    color: var(--base1-color);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+}
+.title2 a{
+    color: var(--base1-color);
+    text-decoration: none;
+}
+.title2 small{
+    color: var(--base1-color);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+}
+.title-blog {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+}
+/* /Generales */
+
+/*botones */
+.btn-granja {
+    background: var(--base1-color);
+    color: white;
+}
+.btn-granja:hover {
+    background-color:var(--base2-color);
+}
+.btn-granjaleer {
+    background: var(--base1-color);
+    color: var(--black-color);
+}
+.btn-granjaleer:hover {
+    background-color:var(--base2-color);
+}
+#button {
+    position: fixed;
+    z-index: 3;
+    bottom: 65px;
+    left: 15px;
+  }
+#button img{
+    height: 75px;
+    width: 75px;
+}
+#button:hover {
+    transform: scale(1.1);
+    transition: all .5s;
+  }
+/* /constantes */
+
+
+/* media */
+  @media screen and (max-width: 720px) {
+    .title1 h1{
+    font-size: 50px;
+    font-weight: 600;
+    }
+}
+@media screen and (max-width: 480px) {
+    .title1 h1{
+    font-size: 40px;
+    }
+}
+/* /media */
+
+
+
